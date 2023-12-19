@@ -82,7 +82,7 @@ function validateForm() {
         setprofile(true);
         if(val && join){
         // setjoin(true);
-        const response=await axios.post("http://localhost:4000/userdata",{name,dob,mob,slot})
+        const response=await axios.post("https://newageyogaclasses.onrender.com//userdata",{name,dob,mob,slot})
         console.log(response);
     };
         
