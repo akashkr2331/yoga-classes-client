@@ -52,7 +52,7 @@ const PaymentForm=({mob})=>{
 
                 if(response.data.success){
                     console.log("Successful Payment")
-                    const savepayment=await axios.post("http://localhost:4000/savepayment", {mob})
+                    const savepayment=await axios.post("https://newageyogaclasses.onrender.com//savepayment", {mob})
                     console.log(savepayment);
                     console.log(response);
                     setpending(false)
